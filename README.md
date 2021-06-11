@@ -1,3 +1,11 @@
+
+DEMO -  http://localhost:8000/search
+
+npm install
+npm run develop
+
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
