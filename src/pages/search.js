@@ -18,8 +18,8 @@ const onSearchHandler = ({ searchTerm, perPage }) => {
 
 const Search = (props) => (
 	<ElasticPressProvider
-		node="https://sharmeelajaimalani-60b5f64d4879b.clients.hosted-elasticpress.io"
-		indexName="sharmeelajaimalani-60b5f64d4879b--stellalunabackdebugmein-post-1"
+		node="https://vishalkhialani-60c6cf39684ab.clients.hosted-elasticpress.io"
+		indexName="vishalkhialani-60c6cf39684ab--stellalunabackdebugmein-post-1"
 		onSearch={onSearchHandler}
 		{...props}
 	>
@@ -39,8 +39,8 @@ const EllasticPressSearchLayer = ({ searchState, resultsState }) => {
 			
 			<main>
 				<ElasticPressProvider
-					node="https://sharmeelajaimalani-60b5f64d4879b.clients.hosted-elasticpress.io"
-					indexName="sharmeelajaimalani-60b5f64d4879b--stellalunabackdebugmein-post-1"
+					node="https://vishalkhialani-60c6cf39684ab.clients.hosted-elasticpress.io"
+					indexName="vishalkhialani-60c6cf39684ab--stellalunabackdebugmein-post-1"
 					loadInitialData={false}
 				>
 					<AutosuggestField />
