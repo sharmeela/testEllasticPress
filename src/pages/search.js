@@ -16,7 +16,7 @@ const onSearchHandler = ({ searchTerm, perPage }) => {
 	//router.push(`/?s=${searchTerm || ''}&perPage=${perPage}`);
 };
 
-const Search = (props) => (
+{/*const Search = (props) => (
 	<ElasticPressProvider
 		node="https://vishalkhialani-60c6cf39684ab.clients.hosted-elasticpress.io"
 		indexName="vishalkhialani-60c6cf39684ab--stellalunabackdebugmein-post-1"
@@ -33,25 +33,6 @@ const Search = (props) => (
 	</ElasticPressProvider>
 );
 
-const EllasticPressSearchLayer = ({ searchState, resultsState }) => {
-	return (
-		<div>
-			
-			<main>
-				<ElasticPressProvider
-					node="https://vishalkhialani-60c6cf39684ab.clients.hosted-elasticpress.io"
-					indexName="vishalkhialani-60c6cf39684ab--stellalunabackdebugmein-post-1"
-					loadInitialData={false}
-				>
-					<AutosuggestField />
-
-				</ElasticPressProvider>
-			</main>
-      
-		</div>
-	);
-};
-
 export async function getServerSideProps({ query }) {
 	const searchState = {
 		searchTerm: query.s || null,
@@ -66,6 +47,26 @@ export async function getServerSideProps({ query }) {
 		props: { searchState, resultsState },
 	};
 }
+*/}
+
+const EllasticPressSearchLayer = ({ searchState, resultsState }) => {
+	return (
+		<div>
+			
+			<main>
+				<ElasticPressProvider
+					node="https://vishalkhialani-60c6cf39684ab.clients.hosted-elasticpress.io"
+					indexName="vishalkhialani-60c6cf39684ab--stellalunabackdebugmein-post-1"
+					loadInitialData={true}
+				>
+					<AutosuggestField />
+
+				</ElasticPressProvider>
+			</main>
+      
+		</div>
+	);
+};
 
 class SearchPage extends Component {  
     render() {        
