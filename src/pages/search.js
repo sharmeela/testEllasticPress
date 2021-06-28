@@ -55,8 +55,8 @@ const EllasticPressSearchLayer = ({ searchState, resultsState }) => {
 			
 			<main>
 				<ElasticPressProvider
-					node="https://vishalkhialani-60c6cf39684ab.clients.hosted-elasticpress.io"
-					indexName="vishalkhialani-60c6cf39684ab--stellalunabackdebugmein-post-1"
+					node="https://vishalkhialani-60d7f1e4ae550.clients.hosted-elasticpress.io"
+					indexName="vishalkhialani-60d7f1e4ae550--stellalunabackdebugmein-post-1"
 					loadInitialData={true}
 				>
 					<AutosuggestField />
